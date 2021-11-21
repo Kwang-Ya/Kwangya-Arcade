@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour
     public GameObject Explosion;
     public GameObject scoreUIText;
 
+    public AudioSource itemSound;
+
     public Text LivesUIText;
     const int MaxLives = 5;
     int lives;
@@ -47,6 +49,9 @@ public class PlayerControl : MonoBehaviour
         // 클릭시 총알 발사
         if(Input.GetKeyDown("space"))
         {
+            // 슈팅 효과ㅎ 재생
+            GetComponent<AudioSource>().Play();
+
             GameObject bullet01 = (GameObject)Instantiate(PlayerBullet);
             bullet01.transform.position = bulletPosition01.transform.position;
             bullet01.GetComponent<PlayerBullet>().speed *= speedLevel;
@@ -126,6 +131,8 @@ public class PlayerControl : MonoBehaviour
         else if(collision.tag == "ItemTag")
         {
             float percent = Random.Range(0f, 10f);
+            itemSound.Play();
+
             Debug.Log(percent);
             if(percent < 5f) // 50%의 확률로 공격속도증가
             {
