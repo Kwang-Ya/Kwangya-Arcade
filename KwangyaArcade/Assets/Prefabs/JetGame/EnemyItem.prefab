@@ -143,5 +143,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 8116844980207821367, guid: 4a1d92fc120d9445fab7fe8942aaa051, type: 3}
   health: 100
-  Explosion: {fileID: 8224086925007856251, guid: 9eb8ed28c07744ae583336458024ec7a,
+  Explosion: {fileID: 1712951974316280314, guid: 2ebe73bd39016480d92dd6ba4730da61,
     type: 3}
