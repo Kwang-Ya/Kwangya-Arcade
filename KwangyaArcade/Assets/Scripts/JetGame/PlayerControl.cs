@@ -149,7 +149,7 @@ public class PlayerControl : MonoBehaviour
             Debug.Log(percent);
             if(percent < 5f) // 50%의 확률로 공격속도증가
             {
-                if (speedLevel < 5)
+                if (speedLevel < 5) // 속도제한
                 {
                     Debug.Log("Speed +");
                     speedLevel += 1;
@@ -157,9 +157,12 @@ public class PlayerControl : MonoBehaviour
             }
             else             // 50%의 확률로 공격력 증가
             {
-                Debug.Log("Attack +");
-                attackLevel += 1;
-                Attack += 100;
+                if(attackLevel < 3) // 공격력제한
+                {
+                    Debug.Log("Attack +");
+                    attackLevel += 1;
+                    Attack += 100;
+                }
             }
             Destroy(collision.gameObject);
         }
