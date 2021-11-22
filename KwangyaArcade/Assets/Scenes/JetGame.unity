@@ -704,6 +704,8 @@ MonoBehaviour:
   speed: 4
   PlayerBullet: {fileID: 4537025572204963695, guid: fff80dad3e2094f7f9ffd0210a017d12,
     type: 3}
+  PlayerBullet02: {fileID: 6955726831402444402, guid: 799e1c534300d471a80a48e21e84ceba,
+    type: 3}
   bulletPosition01: {fileID: 1367834400}
   bulletPosition02: {fileID: 1667068051}
   Explosion: {fileID: 1712951974316280314, guid: 2ebe73bd39016480d92dd6ba4730da61,
@@ -712,6 +714,7 @@ MonoBehaviour:
   itemSound: {fileID: 527561114}
   LivesUIText: {fileID: 1918457474}
   Attack: 0
+  attackLevel: 0
 --- !u!61 &801947529
 BoxCollider2D:
   m_ObjectHideFlags: 0

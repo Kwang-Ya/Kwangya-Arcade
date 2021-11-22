@@ -9,6 +9,7 @@ public class PlayerControl : MonoBehaviour
 
     public float speed;
     public GameObject PlayerBullet;
+    public GameObject PlayerBullet02;
     public GameObject bulletPosition01;
     public GameObject bulletPosition02;
     public GameObject Explosion;
@@ -23,6 +24,7 @@ public class PlayerControl : MonoBehaviour
     int now;
 
     public int Attack;
+    public int attackLevel;
     int speedLevel;
 
     public void Init()
@@ -38,6 +40,7 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        attackLevel = 1;
         Attack = 100;
         now = 0;
         speedLevel = 1;
@@ -51,12 +54,22 @@ public class PlayerControl : MonoBehaviour
         {
             // 슈팅 효과ㅎ 재생
             GetComponent<AudioSource>().Play();
+            GameObject bullet01, bullet02;
 
-            GameObject bullet01 = (GameObject)Instantiate(PlayerBullet);
+            if (attackLevel < 2)
+            {
+                bullet01 = (GameObject)Instantiate(PlayerBullet);
+                bullet02 = (GameObject)Instantiate(PlayerBullet);
+            }
+            else
+            {
+                bullet01 = (GameObject)Instantiate(PlayerBullet02);
+                bullet02 = (GameObject)Instantiate(PlayerBullet02);
+            }
+            
             bullet01.transform.position = bulletPosition01.transform.position;
             bullet01.GetComponent<PlayerBullet>().speed *= speedLevel;
 
-            GameObject bullet02 = (GameObject)Instantiate(PlayerBullet);
             bullet02.transform.position = bulletPosition02.transform.position;
             bullet02.GetComponent<PlayerBullet>().speed *= speedLevel;
         }
@@ -145,6 +158,7 @@ public class PlayerControl : MonoBehaviour
             else             // 50%의 확률로 공격력 증가
             {
                 Debug.Log("Attack +");
+                attackLevel += 1;
                 Attack += 100;
             }
             Destroy(collision.gameObject);
