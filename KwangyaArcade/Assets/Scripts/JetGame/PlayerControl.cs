@@ -10,12 +10,15 @@ public class PlayerControl : MonoBehaviour
     public float speed;
     public GameObject PlayerBullet;
     public GameObject PlayerBullet02;
+
     public GameObject bulletPosition01;
     public GameObject bulletPosition02;
     public GameObject Explosion;
     public GameObject scoreUIText;
 
     public AudioSource itemSound;
+    public AudioSource shootingSound1;
+    public AudioSource shootingSound2;
 
     public Text LivesUIText;
     const int MaxLives = 5;
@@ -52,17 +55,17 @@ public class PlayerControl : MonoBehaviour
         // 클릭시 총알 발사
         if(Input.GetKeyDown("space"))
         {
-            // 슈팅 효과ㅎ 재생
-            GetComponent<AudioSource>().Play();
             GameObject bullet01, bullet02;
 
             if (attackLevel < 2)
             {
+                shootingSound1.Play();
                 bullet01 = (GameObject)Instantiate(PlayerBullet);
                 bullet02 = (GameObject)Instantiate(PlayerBullet);
             }
             else
             {
+                shootingSound2.Play();
                 bullet01 = (GameObject)Instantiate(PlayerBullet02);
                 bullet02 = (GameObject)Instantiate(PlayerBullet02);
             }
