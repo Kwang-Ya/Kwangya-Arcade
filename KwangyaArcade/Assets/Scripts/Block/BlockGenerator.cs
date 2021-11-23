@@ -10,7 +10,7 @@ public class BlockGenerator : MonoBehaviour
     public GameObject GreenBlock;
     public GameObject BlueBlock;
 
-    public int maxBlock = 40;
+    public int maxBlock;
 
     float initialY = -4.438f;
     float gap = 1.072f;
@@ -44,10 +44,10 @@ public class BlockGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // 얘는 다른 playerController 코드에 이식할것
-        //if(Input.GetKeyDown("space"))
+        //// 얘는 다른 playerController 코드에 이식할것
+        //if (Input.GetKeyDown("space"))
         //{
-        //    if(count < maxBlock)
+        //    if (count < maxBlock)
         //    {
         //        Destroy(blockArray[count].gameObject);
         //        count++;
