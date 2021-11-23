@@ -1,0 +1,315 @@
+fileFormatVersion: 2
+guid: faa0f62856653a84ab393dfb3af30523
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6227967781449897003
+    second: Tetromino_BricksDark_0
+  - first:
+      213: 6262316777610680099
+    second: Tetromino_BricksDark_1
+  - first:
+      213: 2066188986060639275
+    second: Tetromino_BricksDark_2
+  - first:
+      213: 2678377394733869021
+    second: Tetromino_BricksDark_3
+  - first:
+      213: 7379636091555663127
+    second: Tetromino_BricksDark_4
+  - first:
+      213: 8328191799893270240
+    second: Tetromino_BricksDark_5
+  - first:
+      213: -6250124123300048635
+    second: Tetromino_BricksDark_6
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: 9, y: 1}
+        - {x: 9, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 02091f0ab96584e4d88892db4b270d96
+      internalID: 6227967781449897003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: -15}
+        - {x: -9, y: -15}
+        - {x: -9, y: 1}
+        - {x: 23, y: 1}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: d9285eddc7389614287f1d513a56584c
+      internalID: 6262316777610680099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: cef6cfd0ae6e0c549ba31db02049982c
+      internalID: 2066188986060639275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 7, y: -15}
+        - {x: 7, y: 1}
+        - {x: 23, y: 1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: fe48e2ceb0f071b40be11d0e4975d11b
+      internalID: 2678377394733869021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31, y: 7}
+        - {x: -31, y: -7}
+        - {x: 31, y: -7}
+        - {x: 31, y: 7}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 97a2965ee92354d4b80944ed298d9e05
+      internalID: 7379636091555663127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15, y: 15}
+        - {x: -15, y: -15}
+        - {x: 15, y: -15}
+        - {x: 15, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 71c8aba4b5558d543991fb3b0859563e
+      internalID: 8328191799893270240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BricksDark_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: fd77077a9f8777b4398f489885c4afb2
+      internalID: -6250124123300048635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

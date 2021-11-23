@@ -1,0 +1,315 @@
+fileFormatVersion: 2
+guid: 4fe48725c4d7b29489b8f72aa14b9825
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1432977066955613407
+    second: Tetromino_Dragon_0
+  - first:
+      213: -5902345390667424709
+    second: Tetromino_Dragon_1
+  - first:
+      213: -2664597353378064804
+    second: Tetromino_Dragon_2
+  - first:
+      213: 9219078013058444905
+    second: Tetromino_Dragon_3
+  - first:
+      213: 4041656895822059501
+    second: Tetromino_Dragon_4
+  - first:
+      213: 4239336270452420039
+    second: Tetromino_Dragon_5
+  - first:
+      213: -5401892564573408292
+    second: Tetromino_Dragon_6
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tetromino_Dragon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: 9, y: 1}
+        - {x: 9, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: be7078518839b2845a7a74737809979e
+      internalID: 1432977066955613407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_Dragon_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: -15}
+        - {x: -9, y: -15}
+        - {x: -9, y: 1}
+        - {x: 23, y: 1}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: c93759705c1ed9c43a115fd9a3046942
+      internalID: -5902345390667424709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_Dragon_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: d9b06c6c80fa3a14aa2aa1e0668561db
+      internalID: -2664597353378064804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_Dragon_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 7, y: -15}
+        - {x: 7, y: 1}
+        - {x: 23, y: 1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4bcc039d65b6ae24899570ed977ebd20
+      internalID: 9219078013058444905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_Dragon_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31, y: 7}
+        - {x: -31, y: -7}
+        - {x: 31, y: -7}
+        - {x: 31, y: 7}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 8d9889513ede62a4c8d1e3e01ea9c9ba
+      internalID: 4041656895822059501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_Dragon_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15, y: 15}
+        - {x: -15, y: -15}
+        - {x: 15, y: -15}
+        - {x: 15, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 09994700a09dd724caa7333ae3d27998
+      internalID: 4239336270452420039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_Dragon_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 27e8d27c9fbd8014d88c008f4ca99f63
+      internalID: -5401892564573408292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
