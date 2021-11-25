@@ -1,10 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BlockPlayerControl : MonoBehaviour
 {
     public BlockGenerator blockGenerator;
+
+    public GameObject gameOverText;
+    public GameObject gameClearText;
+    public GameObject timerText;
+
+    public Text TimerText;
+    private float time = 60f;
 
     int count = 0;
     // Start is called before the first frame update
@@ -16,37 +24,50 @@ public class BlockPlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(count < blockGenerator.maxBlock)
+        if(time > 0)
         {
-            if(Input.GetKeyDown("z"))
+            time -= Time.deltaTime;
+
+            if (count < blockGenerator.maxBlock)
             {
-                if(blockGenerator.blockArray[count].tag == "RedTag")
+                if (Input.GetKeyDown("z"))
                 {
-                    Destroy(blockGenerator.blockArray[count++].gameObject);
+                    if (blockGenerator.blockArray[count].tag == "RedTag")
+                    {
+                        Destroy(blockGenerator.blockArray[count++].gameObject);
+                    }
+                    else time -= 5f;
+                }
+                if (Input.GetKeyDown("x"))
+                {
+                    if (blockGenerator.blockArray[count].tag == "GreenTag")
+                    {
+                        Destroy(blockGenerator.blockArray[count++].gameObject);
+                    }
+                    else time -= 5f;
+                }
+                if (Input.GetKeyDown("c"))
+                {
+                    if (blockGenerator.blockArray[count].tag == "BlueTag")
+                    {
+                        Destroy(blockGenerator.blockArray[count++].gameObject);
+                    }
+                    else time -= 5f;
                 }
             }
-            if (Input.GetKeyDown("x"))
+
+            if(count == blockGenerator.maxBlock)
             {
-                if (blockGenerator.blockArray[count].tag == "GreenTag")
-                {
-                    Destroy(blockGenerator.blockArray[count++].gameObject);
-                }
-            }
-            if (Input.GetKeyDown("c"))
-            {
-                if (blockGenerator.blockArray[count].tag == "BlueTag")
-                {
-                    Destroy(blockGenerator.blockArray[count++].gameObject);
-                }
+                timerText.SetActive(false);
+                gameClearText.SetActive(true);
             }
         }
-        //if (Input.GetKeyDown("z"))
-        //{
-        //    if (count < blockGenerator.maxBlock)
-        //    {
-        //        Destroy(blockGenerator.blockArray[count].gameObject);
-        //        count++;
-        //    }
-        //}
+        else
+        {
+            time = 0f;
+            gameOverText.SetActive(true);
+        }
+
+        TimerText.text = string.Format("{0:N2}", time);
     }
 }
