@@ -11,6 +11,10 @@ public class BlockPlayerControl : MonoBehaviour
     public GameObject gameClearText;
     public GameObject timerText;
 
+    public AudioSource rightSound;
+    public AudioSource wrongSound;
+    public AudioSource clearSound;
+
     public Text TimerText;
     private float time = 60f;
 
@@ -35,29 +39,45 @@ public class BlockPlayerControl : MonoBehaviour
                     if (blockGenerator.blockArray[count].tag == "RedTag")
                     {
                         Destroy(blockGenerator.blockArray[count++].gameObject);
+                        rightSound.Play();
                     }
-                    else time -= 5f;
+                    else
+                    {
+                        time -= 5f;
+                        wrongSound.Play();
+                    }
                 }
                 if (Input.GetKeyDown("x"))
                 {
                     if (blockGenerator.blockArray[count].tag == "GreenTag")
                     {
                         Destroy(blockGenerator.blockArray[count++].gameObject);
+                        rightSound.Play();
                     }
-                    else time -= 5f;
+                    else
+                    {
+                        time -= 5f;
+                        wrongSound.Play();
+                    }
                 }
                 if (Input.GetKeyDown("c"))
                 {
                     if (blockGenerator.blockArray[count].tag == "BlueTag")
                     {
                         Destroy(blockGenerator.blockArray[count++].gameObject);
+                        rightSound.Play();
                     }
-                    else time -= 5f;
+                    else
+                    {
+                        time -= 5f;
+                        wrongSound.Play();
+                    }
                 }
             }
 
             if(count == blockGenerator.maxBlock)
             {
+                clearSound.Play();
                 timerText.SetActive(false);
                 gameClearText.SetActive(true);
             }
