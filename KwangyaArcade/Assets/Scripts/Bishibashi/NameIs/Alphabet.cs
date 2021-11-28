@@ -138,7 +138,20 @@ public class Alphabet : MonoBehaviour
 
     void SelectAlpha()
     {
-        answText.text += alphabets[currAlphaIdx];
+        if (currAlphaIdx == 26)
+        {
+            string origin = answText.text;
+            string newText = "";
+
+            for (int i = 0; i < origin.Length - 1; i++)
+                newText += origin[i];
+
+            Debug.Log("삭제완료!    " + newText);
+
+            answText.text = newText;
+        }
+        else
+            answText.text += alphabets[currAlphaIdx];
 
         Debug.Log(answText.text);
         Debug.Log(questions[quesIdx]);
@@ -146,6 +159,8 @@ public class Alphabet : MonoBehaviour
         if (answText.text.Equals(questions[quesIdx]))
         {
             Debug.Log("correct!");
+            SpawnQues();
+            answText.text = "";
         }
     }
 
