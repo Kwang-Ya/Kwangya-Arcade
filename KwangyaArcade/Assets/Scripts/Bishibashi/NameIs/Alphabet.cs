@@ -7,9 +7,12 @@ public class Alphabet : MonoBehaviour
 {
     public char[] alphabets;
     public Vector3[] alphaTransform;
-
+    public string[] questions = { "AAA", "ABC", "CNN", "CPU", "DDT",
+            "FBI", "INS", "KFC", "LIN", "MON", "NMI", "NOT", "OOO", "POP",
+            "RPG", "SOS", "SUN", "TBC", "TOP", "TUE", "USA", "USO", "XYZ" };
 
     public Text alphabetText;
+    public Text quesText;
 
     public Transform arrow;
     public Vector3 arrowTransform;
@@ -33,7 +36,7 @@ public class Alphabet : MonoBehaviour
     {
         alphabets = new char[27];
         alphaTransform = new Vector3[alphabets.Length];
-        alphabetText.text = "";
+        //alphabetText.text = "";
 
         for (int i = 0; i < alphabets.Length; i++)
         {
@@ -42,7 +45,7 @@ public class Alphabet : MonoBehaviour
             else
                 alphabets[i] = (char)(65 + i);
 
-            alphabetText.text += alphabets[i];
+            //alphabetText.text += alphabets[i];
             alphaTransform[i] = new Vector3(0f, 0f, 0f) + calcOffset(i);
 
             Debug.Log(i);
@@ -95,5 +98,9 @@ public class Alphabet : MonoBehaviour
         Vector3 vec = xOffset * count;
         
         return vec;
+    }
+
+    void spawnQues()
+    {
     }
 }
