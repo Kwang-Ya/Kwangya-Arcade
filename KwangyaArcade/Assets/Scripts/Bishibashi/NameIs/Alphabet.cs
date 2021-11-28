@@ -14,10 +14,18 @@ public class Alphabet : MonoBehaviour
     public string[] questions = { "AAA", "ABC", "CNN", "CPU", "DDT",
             "FBI", "INS", "KFC", "LIN", "MON", "NMI", "NOT", "OOO", "POP",
             "RPG", "SOS", "SUN", "TBC", "TOP", "TUE", "USA", "USO", "XYZ" };
+    private int quesCount;
+    private int maxCount = 5;       // 맞춰야 하는 문제 수
 
     public Text alphabetText;
     public Text quesText;
     public Text answText;
+
+    public Text timeText;
+    public Text gameoverText;
+    public Text gameclearText;
+    private float playTime = 0f;
+    private float clearTime = 30f;     // 클리어 해야 하는 시간
 
     public Transform arrow;
     public Vector3 arrowTransform;
@@ -29,7 +37,8 @@ public class Alphabet : MonoBehaviour
     {
         currAlphaIdx = 0;
         quesIdx = 0;
-        //currAlpha = alphabets[currAlphaIdx];
+        quesCount = 0;
+    //currAlpha = alphabets[currAlphaIdx];
 
         answText.text = "";
         xOffset = new Vector3(0.263f, 0f, 0f);
@@ -57,28 +66,28 @@ public class Alphabet : MonoBehaviour
 
             //alphabetText.text += alphabets[i];
             alphaTransform[i] = new Vector3(0f, 0f, 0f) + CalcOffset(i);
-
-            Debug.Log(i);
         }
     }
 
     void Update()
     {
+        playTime += Time.deltaTime;
+        timeText.text = string.Format("{0:F2}", playTime);
+
+        if (playTime > clearTime)
+            GameOver();
+
         if (Input.GetKeyDown("left"))   // 빨 -> 왼쪽 이동
         {
-            Debug.Log("left");
             MoveCurrAlpha(-1);
             Move(CalcOffset(-1));
         }
         if (Input.GetKeyDown("down"))   // 초 -> 선택
         {
-            Debug.Log("select");
-            // 선택
             SelectAlpha();
         }
         if (Input.GetKeyDown("right"))   // 파 -> 오른쪽 이동
         {
-            Debug.Log("right");
             MoveCurrAlpha(1);
             Move(CalcOffset(1));
         }
@@ -159,8 +168,13 @@ public class Alphabet : MonoBehaviour
         if (answText.text.Equals(questions[quesIdx]))
         {
             Debug.Log("correct!");
-            SpawnQues();
+            quesCount++;
+
+            if (quesCount > maxCount)
+                GameClear();
+
             answText.text = "";
+            SpawnQues();
         }
     }
 
@@ -170,5 +184,17 @@ public class Alphabet : MonoBehaviour
         Debug.Log(quesIdx);
 
         quesText.text = questions[quesIdx];
+    }
+
+    void GameOver()
+    {
+        gameoverText.gameObject.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    void GameClear()
+    {
+        gameclearText.gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 }

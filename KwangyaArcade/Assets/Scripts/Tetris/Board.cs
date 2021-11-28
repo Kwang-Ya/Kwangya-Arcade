@@ -57,7 +57,6 @@ public class Board : MonoBehaviour
         playTime += Time.deltaTime;
         timeText.text = "Time : " + Mathf.Ceil(playTime).ToString();
 
-
         if (playTime >= brickMakeCount * spawnTimeDelay + spawnTime)
         {
             brickMakeCount++;
