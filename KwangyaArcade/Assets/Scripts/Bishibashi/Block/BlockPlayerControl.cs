@@ -34,7 +34,7 @@ public class BlockPlayerControl : MonoBehaviour
 
             if (count < blockGenerator.maxBlock)
             {
-                if (Input.GetKeyDown("z"))
+                if (Input.GetKeyDown("left"))
                 {
                     if (blockGenerator.blockArray[count].tag == "RedTag")
                     {
@@ -47,7 +47,7 @@ public class BlockPlayerControl : MonoBehaviour
                         wrongSound.Play();
                     }
                 }
-                if (Input.GetKeyDown("x"))
+                if (Input.GetKeyDown("down"))
                 {
                     if (blockGenerator.blockArray[count].tag == "GreenTag")
                     {
@@ -60,7 +60,7 @@ public class BlockPlayerControl : MonoBehaviour
                         wrongSound.Play();
                     }
                 }
-                if (Input.GetKeyDown("c"))
+                if (Input.GetKeyDown("right"))
                 {
                     if (blockGenerator.blockArray[count].tag == "BlueTag")
                     {
