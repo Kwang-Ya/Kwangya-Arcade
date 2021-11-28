@@ -77,7 +77,6 @@ public class BlockPlayerControl : MonoBehaviour
 
             if(count == blockGenerator.maxBlock)
             {
-                clearSound.Play();
                 timerText.SetActive(false);
                 gameClearText.SetActive(true);
             }
