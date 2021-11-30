@@ -17,6 +17,12 @@ public class Alphabet : MonoBehaviour
     private int quesCount;
     private int maxCount = 5;       // 맞춰야 하는 문제 수
 
+    public Transform arrow;
+    public Vector3 arrowTransform;
+    public Vector3 leftmostArrowTransform;      // A 칸 위치
+    public Vector3 rightmostArrowTransform;      // < 칸 위치
+    public Vector3 xOffset;
+
     public Text alphabetText;
     public Text quesText;
     public Text answText;
@@ -24,21 +30,23 @@ public class Alphabet : MonoBehaviour
     public Text timeText;
     public Text gameoverText;
     public Text gameclearText;
+    private float totalTime = 60f;
     private float playTime = 0f;
-    private float clearTime = 30f;     // 클리어 해야 하는 시간
+    private float clearTime = 60f;     // 클리어 해야 하는 시간
 
-    public Transform arrow;
-    public Vector3 arrowTransform;
-    public Vector3 leftmostArrowTransform;      // A 칸 위치
-    public Vector3 rightmostArrowTransform;      // < 칸 위치
-    public Vector3 xOffset;
+    AudioSource audioSource;
+    public AudioClip audioMove;
+    public AudioClip audioSelect;
+    public AudioClip audioCorrect;
 
     void Start()
     {
         currAlphaIdx = 0;
         quesIdx = 0;
         quesCount = 0;
-    //currAlpha = alphabets[currAlphaIdx];
+        //currAlpha = alphabets[currAlphaIdx];
+
+        this.audioSource = GetComponent<AudioSource>();
 
         answText.text = "";
         xOffset = new Vector3(0.263f, 0f, 0f);
@@ -72,7 +80,7 @@ public class Alphabet : MonoBehaviour
     void Update()
     {
         playTime += Time.deltaTime;
-        timeText.text = string.Format("{0:F2}", playTime);
+        timeText.text = string.Format("{0:F2}", totalTime - playTime);
 
         if (playTime > clearTime)
             GameOver();
@@ -81,15 +89,18 @@ public class Alphabet : MonoBehaviour
         {
             MoveCurrAlpha(-1);
             Move(CalcOffset(-1));
+            PlaySound("Move");
         }
         if (Input.GetKeyDown("down"))   // 초 -> 선택
         {
             SelectAlpha();
+            PlaySound("Select");
         }
         if (Input.GetKeyDown("right"))   // 파 -> 오른쪽 이동
         {
             MoveCurrAlpha(1);
             Move(CalcOffset(1));
+            PlaySound("Move");
         }
 
         arrow.gameObject.transform.position = arrowTransform;
@@ -168,6 +179,8 @@ public class Alphabet : MonoBehaviour
         if (answText.text.Equals(questions[quesIdx]))
         {
             Debug.Log("correct!");
+            PlaySound("Correct");
+
             quesCount++;
 
             if (quesCount > maxCount)
@@ -196,5 +209,23 @@ public class Alphabet : MonoBehaviour
     {
         gameclearText.gameObject.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    void PlaySound(string action)
+    {
+        switch(action)
+        {
+            case "Move":
+                audioSource.clip = audioMove;
+                break;
+            case "Correct":
+                audioSource.clip = audioCorrect;
+                break;
+            case "Select":
+                audioSource.clip = audioSelect;
+                break;
+        }
+
+        audioSource.Play();
     }
 }

@@ -14,6 +14,8 @@ public class Piece : MonoBehaviour
     private float stepTime;
     private float lockTime;
 
+    
+
     public void Initialize(Board board, Vector3Int position, TetrominoData data)
     {
         this.data = data;
@@ -43,29 +45,36 @@ public class Piece : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             Rotate(-1);
+            board.PlaySound("Move");
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
             Rotate(1);
+            board.PlaySound("Move");
         }
 
         if (Input.GetKeyDown("left"))
         {
             Move(Vector2Int.left);
+            board.PlaySound("Move");
         }
         else if (Input.GetKeyDown("right"))
         {
             Move(Vector2Int.right);
+            board.PlaySound("Move");
         }
 
         if (Input.GetKeyDown("down"))
         {
             Move(Vector2Int.down);
+            board.PlaySound("Move");
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             HardDrop();
+            board.PlaySound("Drop");
+
         }
 
         if (Time.time >= this.stepTime)

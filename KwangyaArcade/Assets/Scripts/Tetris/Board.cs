@@ -27,6 +27,11 @@ public class Board : MonoBehaviour
     private const int spawnTimeDelay = 5;
     private const int spawnTime = 45;
 
+    AudioSource audioSource;
+    public AudioClip audioMove;
+    public AudioClip audioDrop;
+    public AudioClip audioClear;
+
     public RectInt Bounds
     {
         get
@@ -38,6 +43,8 @@ public class Board : MonoBehaviour
 
     private void Awake()
     {
+        this.audioSource = GetComponent<AudioSource>();
+
         this.tilemap = GetComponentInChildren<Tilemap>();
         this.activePiece = GetComponentInChildren<Piece>();
 
@@ -45,6 +52,7 @@ public class Board : MonoBehaviour
         {
             this.tetrominoes[i].Initialize();
         }
+
     }
 
     private void Start()
@@ -250,6 +258,8 @@ public class Board : MonoBehaviour
     {
         RectInt bounds = this.Bounds;
 
+        PlaySound("Clear");
+
         for (int col = bounds.xMin; col < bounds.xMax; col++)
         {
             Vector3Int position = new Vector3Int(col, row, 0);
@@ -269,5 +279,23 @@ public class Board : MonoBehaviour
 
             row++;
         }
+    }
+
+    public void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "Move":
+                audioSource.clip = audioMove;
+                break;
+            case "Drop":
+                audioSource.clip = audioDrop;
+                break;
+            case "Clear":
+                audioSource.clip = audioClear;
+                break;
+        }
+
+        audioSource.Play();
     }
 }
