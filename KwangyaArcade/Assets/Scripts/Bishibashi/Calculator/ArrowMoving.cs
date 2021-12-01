@@ -9,7 +9,7 @@ public class ArrowMoving : MonoBehaviour
     const float initialX = -1.45f;
     const float initialY = -0.49f;
 
-    int moveCount;
+    public int moveCount;
 
     // Start is called before the first frame update
     void Start()
