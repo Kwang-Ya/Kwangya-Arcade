@@ -16,6 +16,10 @@ public class CalculatorController : MonoBehaviour
     public GameObject TimerText;
     private float time = 60f;
 
+    public AudioSource rightSound;
+    public AudioSource wrongSound;
+    public AudioSource selectSound;
+
     string answer = "";
     string[] calculator =
     {
@@ -61,13 +65,14 @@ public class CalculatorController : MonoBehaviour
 
             if (Input.GetKeyDown("down"))
             {
-                if(arrow.moveCount == 9)
+                if (arrow.moveCount == 9)
                 {
                     JudgeAnswer();
                     answer = "";
                 }
                 else
                 {
+                    selectSound.Play();
                     answer += calculator[arrow.moveCount];
                 }
 
@@ -110,10 +115,15 @@ public class CalculatorController : MonoBehaviour
     {
         if(answerCount % 2 == 0)
         {
-            if(answer == answer1[questionIndex])
+            if (answer == answer1[questionIndex])
             {
                 answerCount++;
                 CreateQuestion();
+                rightSound.Play();
+            }
+            else
+            {
+                wrongSound.Play();
             }
         }
         else
@@ -122,6 +132,11 @@ public class CalculatorController : MonoBehaviour
             {
                 answerCount++;
                 CreateQuestion();
+                rightSound.Play();
+            }
+            else
+            {
+                wrongSound.Play();
             }
         }
     }

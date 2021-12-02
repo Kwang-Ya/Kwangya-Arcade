@@ -9,6 +9,7 @@ public class ArrowMoving : MonoBehaviour
     const float initialX = -1.45f;
     const float initialY = -0.49f;
 
+    public AudioSource moveSound;
     public int moveCount;
 
     // Start is called before the first frame update
@@ -24,10 +25,12 @@ public class ArrowMoving : MonoBehaviour
         if(Input.GetKeyDown("left"))
         {
             moveCount--;
+            moveSound.Play();
         }
         else if(Input.GetKeyDown("right"))
         {
             moveCount++;
+            moveSound.Play();
         }
 
         if (moveCount < 0) moveCount = 11;
