@@ -52,7 +52,7 @@ public class Alphabet : MonoBehaviour
         this.audioSource = GetComponent<AudioSource>();
 
         answText.text = "";
-        xOffset = new Vector3(0.27f, 0f, 0f);
+        xOffset = new Vector3(0.267f, 0f, 0f);
         arrowTransform = arrow.gameObject.transform.position;
         leftmostArrowTransform = arrowTransform;
         rightmostArrowTransform = arrowTransform + CalcOffset(26);
