@@ -518,8 +518,8 @@ MonoBehaviour:
   noticeText: {fileID: 1096776353}
   questionText: {fileID: 2139960823}
   timerText: {fileID: 228185097}
-  gameOverButton: {fileID: 0}
-  gameClearButton: {fileID: 0}
+  gameOverButton: {fileID: 1528047802}
+  gameClearButton: {fileID: 406227944}
   TimerText: {fileID: 228185095}
 --- !u!1 &228185095
 GameObject:
