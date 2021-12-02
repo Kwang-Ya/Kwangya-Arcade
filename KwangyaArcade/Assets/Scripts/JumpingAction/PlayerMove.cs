@@ -143,19 +143,19 @@ public class PlayerMove : MonoBehaviour
             door1 = true;
             exit1.SetActive(true);
             Debug.Log(door1);
-            //SceneManager.LoadScene("game1");
+            SceneManager.LoadScene("Bisibasi_1");
         }
         if (collision.gameObject.tag == "Door2")//두번째 미니게임으로
         {
             door2 = true;
             exit2.SetActive(true);
             Debug.Log(door2);
-            //SceneManager.LoadScene("game2");
+            SceneManager.LoadScene("JetGame");
         }
         if (collision.gameObject.tag == "Door3")//세번째 미니게임으로
         {
             exit3.SetActive(true);
-            //SceneManager.LoadScene("game3");
+            SceneManager.LoadScene("Tetris");
 
         }
         if (collision.gameObject.tag == "Door4")//게임 클리어
