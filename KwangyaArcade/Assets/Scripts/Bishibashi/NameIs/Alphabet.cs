@@ -27,6 +27,9 @@ public class Alphabet : MonoBehaviour
     public Text quesText;
     public Text answText;
 
+    public Image correctUI1;
+    public Image correctUI2;
+
     public Text timeText;
     public Text gameoverText;
     public Text gameclearText;
@@ -49,7 +52,7 @@ public class Alphabet : MonoBehaviour
         this.audioSource = GetComponent<AudioSource>();
 
         answText.text = "";
-        xOffset = new Vector3(0.263f, 0f, 0f);
+        xOffset = new Vector3(0.27f, 0f, 0f);
         arrowTransform = arrow.gameObject.transform.position;
         leftmostArrowTransform = arrowTransform;
         rightmostArrowTransform = arrowTransform + CalcOffset(26);
@@ -139,7 +142,7 @@ public class Alphabet : MonoBehaviour
     Vector3 CalcOffset(int count)
     {
         Vector3 vec = xOffset * count;
-       
+
         return vec;
     }
 
@@ -180,6 +183,10 @@ public class Alphabet : MonoBehaviour
         {
             Debug.Log("correct!");
             PlaySound("Correct");
+            correctUI1.gameObject.SetActive(true);
+            correctUI2.gameObject.SetActive(true);
+
+            Invoke("correctInvisible", 0.5f);
 
             quesCount++;
 
@@ -213,7 +220,7 @@ public class Alphabet : MonoBehaviour
 
     void PlaySound(string action)
     {
-        switch(action)
+        switch (action)
         {
             case "Move":
                 audioSource.clip = audioMove;
@@ -227,5 +234,11 @@ public class Alphabet : MonoBehaviour
         }
 
         audioSource.Play();
+    }
+
+    void correctInvisible()
+    {
+        correctUI1.gameObject.SetActive(false);
+        correctUI2.gameObject.SetActive(false);
     }
 }
