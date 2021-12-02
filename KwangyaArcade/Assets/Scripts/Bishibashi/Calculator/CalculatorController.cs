@@ -11,6 +11,8 @@ public class CalculatorController : MonoBehaviour
     public Text questionText;
     public Text timerText;
 
+    public GameObject gameOverButton;
+    public GameObject gameClearButton;
     public GameObject TimerText;
     private float time = 60f;
 
@@ -42,6 +44,7 @@ public class CalculatorController : MonoBehaviour
 
     int questionIndex;
     int answerCount = 0;
+    const int gameClearCount = 12;
 
     // Start is called before the first frame update
     void Start()
@@ -70,11 +73,17 @@ public class CalculatorController : MonoBehaviour
 
                 numberText.text = answer;
             }
+
+            if(answerCount == gameClearCount)
+            {
+                TimerText.SetActive(false);
+                gameClearButton.SetActive(true);
+            }
         }
         else
         {
             time = 0f;
-            //gameOverText.SetActive(true);
+            gameOverButton.SetActive(true);
         }
 
         timerText.text = string.Format("{0:N2}", time);
