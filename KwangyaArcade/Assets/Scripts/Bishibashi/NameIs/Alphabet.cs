@@ -31,8 +31,8 @@ public class Alphabet : MonoBehaviour
     public Image correctUI2;
 
     public Text timeText;
-    public Text gameoverText;
-    public Text gameclearText;
+    public GameObject gameoverButton;
+    public GameObject gameclearButton;
     private float totalTime = 60f;
     private float playTime = 0f;
     private float clearTime = 60f;     // 클리어 해야 하는 시간
@@ -208,13 +208,13 @@ public class Alphabet : MonoBehaviour
 
     void GameOver()
     {
-        gameoverText.gameObject.SetActive(true);
+        gameoverButton.gameObject.SetActive(true);
         Time.timeScale = 0;
     }
 
     void GameClear()
     {
-        gameclearText.gameObject.SetActive(true);
+        gameclearButton.gameObject.SetActive(true);
         Time.timeScale = 0;
     }
 
