@@ -250,6 +250,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 224865285}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &224865287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4840399061295389740, guid: 8f6971a4391264947b8fb01a7d7a75f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 224865285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &295248410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +914,12 @@ PrefabInstance:
 --- !u!4 &730589716 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5791786867505702296, guid: 8f6971a4391264947b8fb01a7d7a75f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 730589715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &730589717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4840399061295389740, guid: 8f6971a4391264947b8fb01a7d7a75f2,
     type: 3}
   m_PrefabInstance: {fileID: 730589715}
   m_PrefabAsset: {fileID: 0}
@@ -1770,9 +1782,9 @@ MonoBehaviour:
   heart4: {fileID: 1609685742}
   heart5: {fileID: 1137495249}
   exit1: {fileID: 980943312}
-  exit2: {fileID: 0}
-  exit3: {fileID: 0}
-  exit4: {fileID: 0}
+  exit2: {fileID: 730589717}
+  exit3: {fileID: 1203412585}
+  exit4: {fileID: 224865287}
 --- !u!111 &1094185504
 Animation:
   m_ObjectHideFlags: 0
@@ -2094,6 +2106,12 @@ PrefabInstance:
 --- !u!4 &1203412584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5791786867505702296, guid: 8f6971a4391264947b8fb01a7d7a75f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1203412583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1203412585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4840399061295389740, guid: 8f6971a4391264947b8fb01a7d7a75f2,
     type: 3}
   m_PrefabInstance: {fileID: 1203412583}
   m_PrefabAsset: {fileID: 0}
