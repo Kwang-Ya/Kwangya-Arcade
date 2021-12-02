@@ -3,6 +3,7 @@
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
 [Ll]ibrary/
+/[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -11,6 +12,7 @@
 /[Mm]emoryCaptures/
 /KwangyaArcade/Temp/
 KwangyaArcade/Library/
+/KwangyaArcade/Library/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
