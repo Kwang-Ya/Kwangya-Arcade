@@ -14,6 +14,9 @@
 KwangyaArcade/Library/
 /KwangyaArcade/Library/
 
+KwangyaArcade/Assets/Sources/
+/KwangyaArcade/Assets/Sources/
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
