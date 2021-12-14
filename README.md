@@ -1,6 +1,6 @@
 # 🕹KWANG-YA[쾅-야] ARCADE[아케이드]
 <div>
-2021-2 동국대학교 멀티미디어공학과 게임프로젝트 3조 <a href="https://github.com/miiinnn23">이승민</a> <a href="https://github.com/MinHeeCha">차민희</a> <a href="https://github.com/Jy-do">이지유</a><br></br>
+2021-2 동국대학교 멀티미디어공학과 게임프로그래밍 텀프로젝트 3조 <a href="https://github.com/miiinnn23">이승민</a> <a href="https://github.com/MinHeeCha">차민희</a> <a href="https://github.com/Jy-do">이지유</a><br></br>
 </div>
 
 > ## 👾 게임 설명
