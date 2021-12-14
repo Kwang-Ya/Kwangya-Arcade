@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: bd35ba33bc44e57448116d6a54bf08d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4693973864940672564
+    second: Tetromino_CheckeredWhite_0
+  - first:
+      213: -7516107431064914624
+    second: Tetromino_CheckeredWhite_1
+  - first:
+      213: 990020902465402432
+    second: Tetromino_CheckeredWhite_2
+  - first:
+      213: -7857821844885415118
+    second: Tetromino_CheckeredWhite_3
+  - first:
+      213: -8304056723103098488
+    second: Tetromino_CheckeredWhite_4
+  - first:
+      213: 8606676900642209442
+    second: Tetromino_CheckeredWhite_5
+  - first:
+      213: -4124949397787769388
+    second: Tetromino_CheckeredWhite_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: 9, y: 1}
+        - {x: 9, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: af31c608d7787dd49a646a62c8a136bd
+      internalID: 4693973864940672564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: -15}
+        - {x: -9, y: -15}
+        - {x: -9, y: 1}
+        - {x: 23, y: 1}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 8055e1154a0aa9241a4d6ea878062eca
+      internalID: -7516107431064914624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 08ad9f0a16bb195428c160206e7aeccd
+      internalID: 990020902465402432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 7, y: -15}
+        - {x: 7, y: 1}
+        - {x: 23, y: 1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 62da94eac29e0804e828af78573f34c8
+      internalID: -7857821844885415118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31, y: 7}
+        - {x: -31, y: -7}
+        - {x: 31, y: -7}
+        - {x: 31, y: 7}
+      tessellationDetail: 1
+      bones: []
+      spriteID: a1bcd58454f6a184cabd48706ae423f5
+      internalID: -8304056723103098488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15, y: 15}
+        - {x: -15, y: -15}
+        - {x: 14, y: -15}
+        - {x: 15, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: bdbbf97bed133c64ea4d7b56eed27531
+      internalID: 8606676900642209442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_CheckeredWhite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 6cbc0557f5aa99441aee9cbdcb742d64
+      internalID: -4124949397787769388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: 63ce850d82e55484a9f2d11cecfc6ad0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8625713514908805422
+    second: Tetromino_NeonLights4_0
+  - first:
+      213: 5214826509648938157
+    second: Tetromino_NeonLights4_1
+  - first:
+      213: 5366806396211078050
+    second: Tetromino_NeonLights4_2
+  - first:
+      213: -7049450842522843843
+    second: Tetromino_NeonLights4_3
+  - first:
+      213: 6568552455668534086
+    second: Tetromino_NeonLights4_4
+  - first:
+      213: -2691660971872680014
+    second: Tetromino_NeonLights4_5
+  - first:
+      213: 5463305279588873026
+    second: Tetromino_NeonLights4_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: 16}
+        - {x: -24, y: 0}
+        - {x: 8, y: 0}
+        - {x: 8, y: -16}
+        - {x: 24, y: -16}
+        - {x: 24, y: 16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 840c8b75808693f42a987c712692f8e9
+      internalID: 8625713514908805422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: 16}
+        - {x: -24, y: -16}
+        - {x: -8, y: -16}
+        - {x: -8, y: 0}
+        - {x: 24, y: 0}
+        - {x: 24, y: 16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: e3dc5072a07b89644b5a7a2e0bd37e0f
+      internalID: 5214826509648938157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 16}
+        - {x: -24, y: 16}
+        - {x: -24, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: -16}
+        - {x: 24, y: -16}
+        - {x: 24, y: 0}
+        - {x: 8, y: 0}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0a49a8a5a71ff6944a5cc0a92ad7e4cf
+      internalID: 5366806396211078050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 24, y: 16}
+        - {x: -8, y: 16}
+        - {x: -8, y: 0}
+        - {x: -24, y: 0}
+        - {x: -24, y: -16}
+        - {x: 8, y: -16}
+        - {x: 8, y: 0}
+        - {x: 24, y: 0}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 49db7cfa350173b46b70e13576fe4d7e
+      internalID: -7049450842522843843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 8}
+        - {x: -32, y: -8}
+        - {x: 32, y: -8}
+        - {x: 32, y: 8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 82359d71e7ca32945a4f79d889ac3599
+      internalID: 6568552455668534086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: ebb5cc37372531f4f8c1ca5c9fbbf9c5
+      internalID: -2691660971872680014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_NeonLights4_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 16}
+        - {x: -8, y: 16}
+        - {x: -8, y: 0}
+        - {x: -24, y: 0}
+        - {x: -24, y: -16}
+        - {x: 24, y: -16}
+        - {x: 24, y: 0}
+        - {x: 8, y: 0}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0ead6f8a58badd5409f8454c1b5a6cfb
+      internalID: 5463305279588873026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

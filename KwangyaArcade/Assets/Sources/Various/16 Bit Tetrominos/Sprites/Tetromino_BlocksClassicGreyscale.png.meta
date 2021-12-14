@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: c7aa410d3e4f4534580071c9352a5758
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7793207243864471456
+    second: Tetromino_BlocksClassicGreyscale_0
+  - first:
+      213: 5226893145294704384
+    second: Tetromino_BlocksClassicGreyscale_1
+  - first:
+      213: 4338836266890261651
+    second: Tetromino_BlocksClassicGreyscale_2
+  - first:
+      213: 2702749015260617222
+    second: Tetromino_BlocksClassicGreyscale_3
+  - first:
+      213: -6709996401451040737
+    second: Tetromino_BlocksClassicGreyscale_4
+  - first:
+      213: -2284085152667364694
+    second: Tetromino_BlocksClassicGreyscale_5
+  - first:
+      213: 2284222818562327131
+    second: Tetromino_BlocksClassicGreyscale_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: 9, y: 1}
+        - {x: 9, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: a25b0de064660cb488648f63bacbf54b
+      internalID: 7793207243864471456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 15}
+        - {x: -23, y: -15}
+        - {x: -9, y: -15}
+        - {x: -9, y: 1}
+        - {x: 23, y: 1}
+        - {x: 23, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 3ef241990c057e241bd8cec9942ecdf0
+      internalID: 5226893145294704384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -23, y: 15}
+        - {x: -23, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2be227903370b43468a760000078e4cb
+      internalID: 4338836266890261651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 7, y: -15}
+        - {x: 7, y: 1}
+        - {x: 23, y: 1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: de9019f9378f04948a89803b491a6070
+      internalID: 2702749015260617222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31, y: 7}
+        - {x: -31, y: -7}
+        - {x: 31, y: -7}
+        - {x: 31, y: 7}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 149644ad435d1ed4194918fe3e48a245
+      internalID: -6709996401451040737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15, y: 15}
+        - {x: -15, y: -15}
+        - {x: 15, y: -15}
+        - {x: 15, y: 15}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 25487bb3a0c93064ab17b39664e1ad7d
+      internalID: -2284085152667364694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tetromino_BlocksClassicGreyscale_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 7, y: 15}
+        - {x: -7, y: 15}
+        - {x: -7, y: -1}
+        - {x: -23, y: -1}
+        - {x: -23, y: -15}
+        - {x: 23, y: -15}
+        - {x: 23, y: -1}
+        - {x: 7, y: -1}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7399ccef093d5e44da1ae7323c71fb11
+      internalID: 2284222818562327131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
